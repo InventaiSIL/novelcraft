@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\sdk\InventaiNovel\InventaiNovel.csproj" />
     <ProjectReference Include="..\web.client\web.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
@@ -28,7 +29,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\sdk\Inventai\Inventai.csproj" />
-    <ProjectReference Include="..\..\InventaiNovel\InventaiNovel.csproj" />
   </ItemGroup>
 
 </Project>
