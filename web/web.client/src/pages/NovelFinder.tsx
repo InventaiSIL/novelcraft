@@ -24,7 +24,7 @@ const NovelFinder: React.FC = () => {
     setNovel(null);
 
     try {
-      const response = await fetch(`https://inventai-final-awfabwdge5d5g8bk.canadacentral-01.azurewebsites.net/Novel/${generationId}`);
+      const response = await fetch(`http://localhost:5275/Novel/${generationId}`);
       if (!response.ok) {
         throw new Error('Failed to find novel');
       }
@@ -42,7 +42,7 @@ const NovelFinder: React.FC = () => {
     if (!novel?.outputPath) return;
 
     try {
-      const response = await fetch(`https://inventai-final-awfabwdge5d5g8bk.canadacentral-01.azurewebsites.net/Novel/${novel.id}/download`);
+      const response = await fetch(`http://localhost:5275/Novel/${novel.id}/download`);
       if (!response.ok) {
         throw new Error('Failed to download novel');
       }

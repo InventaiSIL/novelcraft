@@ -58,7 +58,7 @@ const NovelGenerator: React.FC = () => {
 
   const checkGenerationStatus = async (generationId: string) => {
     try {
-      const response = await fetch(`https://inventai-final-awfabwdge5d5g8bk.canadacentral-01.azurewebsites.net/Novel/${generationId}/status`);
+      const response = await fetch(`http://localhost:5275/Novel/${generationId}/status`);
       if (!response.ok) {
         throw new Error('Failed to check status');
       }
@@ -97,7 +97,7 @@ const NovelGenerator: React.FC = () => {
     e.preventDefault();
     setIsGenerating(true);
     try {
-      const response = await fetch('https://inventai-final-awfabwdge5d5g8bk.canadacentral-01.azurewebsites.net/Novel', {
+      const response = await fetch('http://localhost:5275/Novel', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -225,7 +225,7 @@ const NovelGenerator: React.FC = () => {
                   <button
                     onClick={async () => {
                       try {
-                        const response = await fetch(`https://inventai-final-awfabwdge5d5g8bk.canadacentral-01.azurewebsites.net/novels/${generationInfo.id}/game.zip`);
+                        const response = await fetch(`http://localhost:5275/novels/${generationInfo.id}/game.zip`);
                         if (!response.ok) throw new Error('Download failed');
                         
                         const blob = await response.blob();
