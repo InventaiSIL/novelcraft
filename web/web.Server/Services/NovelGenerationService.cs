@@ -48,7 +48,7 @@ namespace web.Server.Services
 
                             // Create and save novel
                             var novelManager = new InventaiNovelManager(textAgent, imageAgent);
-                            novelManager.CreateNovel(generation.Request);
+                            await novelManager.CreateNovel(generation.Request);
 
                             var homePath = Environment.GetEnvironmentVariable("HOME");
                             var basePath = string.IsNullOrEmpty(homePath)
