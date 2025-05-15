@@ -1,5 +1,7 @@
 # InventAI Novelcraft
 
+![Screenshot](./docs/main-page.png)
+
 InventAI Novelcraft is a web-based application for generating interactive Ren'Py games using AI. It provides tools for novel generation, character management, discussion context, and more, enabling creators to quickly build rich, branching stories and export them for use in Ren'Py or other engines.
 
 ## Installation
