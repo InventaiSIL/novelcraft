@@ -24,7 +24,7 @@ const NovelGenerator: React.FC = () => {
       context: '',
       numCharacters: 3
     },
-    numScenes: 5,
+    numScenes: 3,
     prompt: '',
     context: ''
   });
@@ -429,7 +429,7 @@ const NovelGenerator: React.FC = () => {
                         value={formData.numScenes}
                         onChange={handleInputChange}
                         min="1"
-                        max="20"
+                        max="10"
                         className="flex-1 h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500 px-4 py-2"
                       />
                       <span className="bg-purple-500 text-white text-sm font-bold px-3 py-1 rounded-full">
