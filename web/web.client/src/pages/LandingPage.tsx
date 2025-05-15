@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="block">Create Interactive</span>
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                  Choice-Based Games
+                  Choice-Based Games under RenPy format
                 </span>
               </h1>
               <p className="text-xl text-gray-300 max-w-lg">
