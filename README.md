@@ -5,7 +5,7 @@ InventAI Novelcraft is a web-based application for generating interactive Ren'Py
 ## Documentation
 
 For detailed information on installation, usage instructions, examples, and
-more, please refer to the complete [documentation](https://inventai-docs.vercel.app/docs).
+more, please refer to the complete [documentation](https://inventai-docs.vercel.app/docs/tools/novelcraft).
 
 ## Contributing
 
